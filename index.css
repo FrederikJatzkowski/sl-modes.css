@@ -1,0 +1,87 @@
+:root{
+    --sl-color-primary-hue: 203;
+    --sl-color-primary-saturation: 100%;
+    --sl-color-primary-text: var(--sl-color-black);
+    color:var(--sl-color-gray-15);
+}
+:root, body{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: var(--sl-font-sans);
+    background-color: var(--sl-color-white);
+}
+.header{
+    position: absolute;
+    top: 0vh;
+    left: 0vh;
+    width: 18vw;
+    height: 21vh;
+    padding: 2vh 1vw;
+    background-color: var(--sl-color-primary-75);
+    font-size: 1vw;
+}
+.header h1 {
+    margin: 0;
+    padding: 1.1vh 2vw;
+}
+.header .sl-switch{
+    display: block;
+    padding: 1vh 0vw 0vh 1vw;
+}
+.header .sl-switch::part(label), header h1{
+    color: var(--sl-color-black);
+}
+.sl-menu{
+    position: absolute;
+    top: 25vh;
+    left: 0vw;
+    width: 20vw;
+    height: 75vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: var(--sl-color-white);
+}
+main{
+    position: absolute;
+    top: 0vh;
+    left: 20vw;
+    width: 70vw;
+    height: 90vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    padding: 5vh 5vw;
+}
+main h1{
+    padding:15vh 0vw 3vh 0vw;
+    color: var(--sl-color-primary-5);
+}
+
+
+
+
+
+/* Scrollbar */
+    /* width */
+    ::-webkit-scrollbar {
+        width: .8vw;
+    }
+    .sl-menu::-webkit-scrollbar {
+        width: .3vw;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: var(--sl-color-primary-95);
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: var(--sl-color-primary-75);
+    }
+
+
+/*  */

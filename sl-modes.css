@@ -1,0 +1,77 @@
+
+:root[sl-dark-mode=true]{
+
+    /*
+
+    JS-Function for Lightness Recalculation: 
+
+    Run the following snippet in order to get a table of the darkMode lightness values displayed in the console:
+
+    var table = [];
+    for (var step = 5; step < 100; step = step + 5){
+        if (step < 50){
+            table.push({standard:step, dark:(7/10)*step+15});
+        }
+        else{
+            table.push({standard:step, dark:step});
+        }
+    }
+    console.table(table);
+
+    */
+    --sl-color-primary-saturation-darkMode:calc(var(--sl-color-primary-saturation)*0.9);
+
+    --sl-color-primary-5:hsl( var(--sl-color-primary-hue), var(--sl-color-primary-saturation-darkMode),95%);
+    --sl-color-primary-10:hsl( var(--sl-color-primary-hue), var(--sl-color-primary-saturation-darkMode),90%);
+    --sl-color-primary-15:hsl( var(--sl-color-primary-hue), var(--sl-color-primary-saturation-darkMode),85%);
+    --sl-color-primary-20:hsl( var(--sl-color-primary-hue), var(--sl-color-primary-saturation-darkMode),80%);
+    --sl-color-primary-25:hsl( var(--sl-color-primary-hue), var(--sl-color-primary-saturation-darkMode),75%);
+    --sl-color-primary-30:hsl( var(--sl-color-primary-hue), var(--sl-color-primary-saturation-darkMode),70%);
+    --sl-color-primary-35:hsl( var(--sl-color-primary-hue), var(--sl-color-primary-saturation-darkMode),65%);
+    --sl-color-primary-40:hsl( var(--sl-color-primary-hue), var(--sl-color-primary-saturation-darkMode),60%);
+    --sl-color-primary-45:hsl( var(--sl-color-primary-hue), var(--sl-color-primary-saturation-darkMode),55%);
+    --sl-color-primary-50:hsl( var(--sl-color-primary-hue), var(--sl-color-primary-saturation-darkMode),50%);
+    --sl-color-primary-55:hsl( var(--sl-color-primary-hue), var(--sl-color-primary-saturation-darkMode),46.5%);
+    --sl-color-primary-60:hsl( var(--sl-color-primary-hue), var(--sl-color-primary-saturation-darkMode),43%);
+    --sl-color-primary-65:hsl( var(--sl-color-primary-hue), var(--sl-color-primary-saturation-darkMode),39.5%);
+    --sl-color-primary-70:hsl( var(--sl-color-primary-hue), var(--sl-color-primary-saturation-darkMode),36%);
+    --sl-color-primary-75:hsl( var(--sl-color-primary-hue), var(--sl-color-primary-saturation-darkMode),32.5%);
+    --sl-color-primary-80:hsl( var(--sl-color-primary-hue), var(--sl-color-primary-saturation-darkMode),29%);
+    --sl-color-primary-85:hsl( var(--sl-color-primary-hue), var(--sl-color-primary-saturation-darkMode),25.5%);
+    --sl-color-primary-90:hsl( var(--sl-color-primary-hue), var(--sl-color-primary-saturation-darkMode),22%);
+    --sl-color-primary-95:hsl( var(--sl-color-primary-hue), var(--sl-color-primary-saturation-darkMode),18.5%);
+
+    /* Redefining Gray Colors */
+    --sl-color-gray-saturation-darkMode:calc(var(--sl-color-gray-saturation)*0.75);
+
+    --sl-color-gray-0:hsl( var(--sl-color-gray-hue), var(--sl-color-gray-saturation-darkMode),100%);
+    --sl-color-gray-5:hsl( var(--sl-color-gray-hue), var(--sl-color-gray-saturation-darkMode),95%);
+    --sl-color-gray-10:hsl( var(--sl-color-gray-hue), var(--sl-color-gray-saturation-darkMode),90%);
+    --sl-color-gray-15:hsl( var(--sl-color-gray-hue), var(--sl-color-gray-saturation-darkMode),85%);
+    --sl-color-gray-20:hsl( var(--sl-color-gray-hue), var(--sl-color-gray-saturation-darkMode),80%);
+    --sl-color-gray-25:hsl( var(--sl-color-gray-hue), var(--sl-color-gray-saturation-darkMode),75%);
+    --sl-color-gray-30:hsl( var(--sl-color-gray-hue), var(--sl-color-gray-saturation-darkMode),70%);
+    --sl-color-gray-35:hsl( var(--sl-color-gray-hue), var(--sl-color-gray-saturation-darkMode),65%);
+    --sl-color-gray-40:hsl( var(--sl-color-gray-hue), var(--sl-color-gray-saturation-darkMode),60%);
+    --sl-color-gray-45:hsl( var(--sl-color-gray-hue), var(--sl-color-gray-saturation-darkMode),55%);
+    --sl-color-gray-50:hsl( var(--sl-color-gray-hue), var(--sl-color-gray-saturation-darkMode),50%);
+    --sl-color-gray-55:hsl( var(--sl-color-gray-hue), var(--sl-color-gray-saturation-darkMode),46.5%);
+    --sl-color-gray-60:hsl( var(--sl-color-gray-hue), var(--sl-color-gray-saturation-darkMode),43%);
+    --sl-color-gray-65:hsl( var(--sl-color-gray-hue), var(--sl-color-gray-saturation-darkMode),39.5%);
+    --sl-color-gray-70:hsl( var(--sl-color-gray-hue), var(--sl-color-gray-saturation-darkMode),36%);
+    --sl-color-gray-75:hsl( var(--sl-color-gray-hue), var(--sl-color-gray-saturation-darkMode),32.5%);
+    --sl-color-gray-80:hsl( var(--sl-color-gray-hue), var(--sl-color-gray-saturation-darkMode),29%);
+    --sl-color-gray-85:hsl( var(--sl-color-gray-hue), var(--sl-color-gray-saturation-darkMode),25.5%);
+    --sl-color-gray-90:hsl( var(--sl-color-gray-hue), var(--sl-color-gray-saturation-darkMode),22%);
+    --sl-color-gray-95:hsl( var(--sl-color-gray-hue), var(--sl-color-gray-saturation-darkMode),18.5%);
+    --sl-color-gray-100:hsl( var(--sl-color-gray-hue), var(--sl-color-gray-saturation-darkMode),15%);
+
+    /* Redefining Other Colors */
+    --sl-color-black:var(--sl-color-gray-0);
+    --sl-color-white:var(--sl-color-gray-100);
+
+    /* Space for customizations of the Root Element */
+    
+}
+
+/* Space for customizations of all Elements. All selectors have to be prefixed with ":root[sl-dark-mode=true]". */
